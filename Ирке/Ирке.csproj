@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{10DA74A8-3382-4DD3-8810-EE3833F0C367}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ирке</RootNamespace>
+    <AssemblyName>Опросник</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Medicalwp-Medical-Health-Sign-red.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>Ирке.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FIO.Designer.cs">
+      <DependentUpon>FIO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="page1_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="page1_2.Designer.cs">
+      <DependentUpon>page1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page3.Designer.cs">
+      <DependentUpon>Page3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page4.Designer.cs">
+      <DependentUpon>Page4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page5.Designer.cs">
+      <DependentUpon>Page5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page6.Designer.cs">
+      <DependentUpon>Page6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page7.Designer.cs">
+      <DependentUpon>Page7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Page8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Page8.Designer.cs">
+      <DependentUpon>Page8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonCheck.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respondents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Respondents.Designer.cs">
+      <DependentUpon>Respondents.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FIO.resx">
+      <DependentUpon>FIO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="page1_2.resx">
+      <DependentUpon>page1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page3.resx">
+      <DependentUpon>Page3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page4.resx">
+      <DependentUpon>Page4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page5.resx">
+      <DependentUpon>Page5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page6.resx">
+      <DependentUpon>Page6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page7.resx">
+      <DependentUpon>Page7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Page8.resx">
+      <DependentUpon>Page8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Respondents.resx">
+      <DependentUpon>Respondents.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Medicalwp-Medical-Health-Sign-red.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
